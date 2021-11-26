@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<link rel="stylesheet" href="css/home.css">
+	<style>
+	#d1 a{display: none;}
+	#d1{height:600px; }
+</style>
+<!-- banner样式结束 -->
+	<!-- 轮播图banner js -->
+	<script>
+ var len=document.getElementsByName("i");
+ var pos=0;
+ function change()
+ {
+ 	len[pos].style.display="none";
+ 	pos++;
+ 	if(pos==len.length) pos=0;
+ 	len[pos].style.display="block";
+ }
+ setInterval("change()",3000);
+
+</script>
+<!-- banner结束 -->
+</head>
+<body>
+	<!-- logo -->
+	<div id="logo">
+		<div class="container"></div>
+		<p><a href="index.html">SEVENTEEN</a> </p>
+	</div>
+	<!-- 导航栏 -->
+	<div id="lead">
+		<div class="container">
+			<ul class="u1">
+			<li>
+				<a href="product.html">女士</a>	
+			</li>
+			<li>	
+				<a href="#">男士</a>
+			</li>
+			<li >
+				<a href="#">儿童</a>
+			</li>
+			<li class="shoes" >
+				<a href="#">鞋包</a>
+			</li>
+		</ul>
+	</div></div>
+	<!-- 轮播图banner -->
+	 <div id="banner"> 
+		<div class="container"></div>
+		<div id=d1 >
+		<a name="i" href="#"style="display: block" ><img src="img/x1.png" alt="" width=100% height="600px"></a>
+		<a name="i" href="#"><img src="img/x2.png" alt="" width=100% height="600px"></a>
+		<a name="i" href="#"><img src="img/x3.png" alt="" width=100% height="600px"></a>
+		<a name="i" href="#"><img src="img/x4.png" alt="" width=100% height="600px"></a>
+	</div>
+	</div>
+	<!-- 内容 -->
+	<div id="content">
+		<div class="container"></div>
+		<div class="d1">
+          <a href="#"><img src="img/q7.png" alt=""></a>
+		</div>
+		<div class="d2">
+			<ul>
+				<li><a href="#"><img src="img/q1.png" alt=""></a></li>
+				<li><a href="#"><img src="img/q2.png" alt=""></a></li>
+				<li><a href="#"><img src="img/q3.png" alt=""></a></li>
+				<li><a href="#"><img src="img/q4.png" alt=""></a></li>
+				<li><a href="#"><img src="img/q5.png" alt=""></a></li>
+				<li><a href="#"><img src="img/q6.png" alt=""></a></li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>

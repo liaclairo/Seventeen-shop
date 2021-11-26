@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="css/shopping car.css" rel="stylesheet" type="text/css">
+		<title>购物车</title>
+	</head>
+	<body>
+		
+
+	
+
+</head>
+<body>
+	<!-- lead -->
+	<div id="lead">
+		<!-- <div class="container"></div> -->
+		<table >
+			<tr>
+			<td id=logo><a   href="index.html"><span style="color: #F33F3F;">SEVENTEEN &nbsp;&nbsp;&nbsp;&nbsp;购物车</span></a></td>	
+			<td><a href="index.html">主页</a></td>
+			<td><a href="product.html">新品|女士</a></td>
+			<td><a href="#">新品|男士</a></td>
+			<td><a href="#">新品|儿童</a></td>
+			<td><a href="#">新品|鞋包</a></td>
+			<td><a href="about us.html">品牌形象</a></td>
+		</tr></table>
+	</div>
+
+<table id="jsTrolley">
+	<thead><tr><th>商品</th><th>价格</th><th>操作</th></tr></thead>
+	<tbody>
+		<tr class="pic"><td ><img src="img/z4.jpg" alt=""></td><td>666</td><td><a class="del" href="javascript:void(0);"> 删除</a></td></tr>
+		<tr class="pic"><td><img src="img/z2.jpg" alt=""></td><td>666</td><td><a class="del" href="javascript:void(0);">删除</a></td></tr>
+		<tr class="pic"><td><img src="img/z3.jpg" alt=""></td><td>666</td><td><a class="del" href="javascript:void(0);">删除</a></td></tr>
+		
+	</tbody>
+	<tfoot><tr><th>总计</th><td colspan="2">1998(3件商品)</td></tr></tfoot>
+</table>
+<div class="goods1">
+					<table ><tr><td width=50%><button  class="btn">确认购买</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<button id='clear' class="btn">全部清空</button></td></tr></table>
+	</div>
+<!-- <div class="add"> 
+	<p>
+		<strong>添加商品:</strong>
+		<label>
+			商品名称
+			<input id="newName" type="text" >
+		</label>
+		<label>
+			商品价格
+			<input id="newPrice" type="number" >
+		</label>
+		<button onclick="addBtnMethod()">添加</button>
+	</p>
+</div> -->
+
+<script>
+	var goods=document.querySelectorAll('.pic')
+	var del=document.querySelectorAll('.del')
+	var tfoot=document.querySelector('tfoot')
+	for(let i=0;i<del.length;i++){
+		del[i].addEventListener('click',e=>{
+			console.log(this)
+			var tr=e.target.parentNode.parentNode
+			var price=tr.children[1].innerText
+			console.log(price)
+			console.log(tfoot.children[0].children[1])
+			var total=tfoot.children[0].children[1].innerText.split('(')[0]
+			console.log(total)
+			tr.parentNode.removeChild(tr)
+			var num=document.querySelectorAll('.del').length
+	tfoot.innerHTML=`<tr><th>总计</th><td colspan="2">${(Number(total)-Number(price).toFixed(2))}(${num}件商品)</td></tr>`
+
+		})
+	
+	}
+	var clear=document.querySelector('#clear')
+	var jsTrolley=document.querySelector('#jsTrolley')
+	clear.addEventListener('click',e=>{
+		// console.log(jsTrolley.parentNode.removeChild())
+		jsTrolley.parentNode.removeChild(jsTrolley)
+		var goods1=document.querySelector('.goods1')
+		goods1.style.marginTop=500+'px'
+	})
+	
+</script>
+
+ 
+</body>
+</html>
+				
+

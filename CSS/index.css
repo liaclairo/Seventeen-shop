@@ -1,0 +1,131 @@
+
+*{
+	margin: 0;
+	padding:0;
+}
+ol,ul{
+	list-style-type: none;
+}
+a{
+	color:#666;
+	text-decoration: none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+/*测试部分*/
+#top,#guide,#banner,#last,#pic{
+	
+	height: 100%;
+	width:100%;
+	/* border:1px solid #000 ; */
+	margin:0px auto;
+}
+.container{
+	width:1280px;
+	border:1px solid #EEEEEE;
+	margin:0px auto;
+}
+/* .containerTop{
+	width:100%;
+	border:1px solid #EEEEEE;
+	margin:0px auto;
+} */
+/*设置顶部样式*/
+#top{
+	border:1px solid #EEEEEE ;
+	border-bottom:0px ;
+	height:30px;
+	background-color:#232323;
+}
+#top ul li{
+	float:left;
+	line-height: 30px;
+}
+#top li a{
+	color:#B2B2B2;
+	border-right:1px solid #B2B2B2;
+	padding:0 15px;
+}
+#top li a:hover{
+	color:#F33F3F;
+}
+#top .car a{
+	border:none;
+}
+/*设置导航栏样式*/
+#guide{
+	height:90px;
+	background-color:#232323;
+	border:2px solid #B2B2B2;
+}
+#guide li{
+	float:left;
+	margin:0px 15px;
+	line-height: 90px;
+	
+}
+#guide li a{
+	color:#B2B2B2;
+	font-weight: bold;
+}
+#guide .logo a{
+	color:#F33F3F;
+	font-size: 50px;
+	line-height: 90px;
+}
+#guide li a:hover{
+	color:#F33F3F;}
+/*设置最新产品样式*/
+#last {
+	border-bottom: 1px solid #EEEEEE;
+	height:50px;
+
+}
+#last .pl{
+	font-size: 30px;
+	font-weight: bold;
+
+}
+#last li a {
+	font-size: 15px;
+	font-weight: bold;
+	color:#F33F3F;
+	line-height: 50px;
+}
+/*产品图样式*/
+#pic{
+	height: 850px;
+	width: 100%;
+}
+#pic .star{
+	padding-bottom: 10px;
+}
+
+#pic .down-content img{
+	width:27px;
+	height:21px;
+	padding-left:2px;
+}
+#pic  li{
+	width:430px;
+	border:1px solid #EEEEEE;
+	float:left;
+	margin: 10px 10px;
+}
+/*轮播图*/
+#d1{height:600px; }
+#d1 a{display: none;}
+/* #d1 img{
+	height: 690;
+} */
+
+.music{
+	
+	display: none;
+} 
+
+

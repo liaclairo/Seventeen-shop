@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding:0;
+}
+ol,ul{
+	list-style-type: none;
+}
+a{
+	color:#666;
+	
+}
+#logo,#lead,#banner,#content{
+	
+	height:100%px;
+	width:100%;
+	border:1px solid #666 ;
+	margin:0px auto;
+}
+.container{
+	width:100%;
+	border:1px solid black;
+	margin:0px auto;
+}
+#logo{
+	height:90px;
+	background-color:#232323;
+}
+#logo a{
+	text-align: center;
+	color:#F33F3F;
+	font-size: 50px;
+	line-height: 90px;
+	text-decoration: none;
+}
+#logo p{
+	text-align: center;
+	color:#F33F3F;
+	font-size: 50px;
+	line-height: 90px;
+	text-decoration: none;
+}
+#lead{
+	height:60px;
+	text-align:center; 
+	margin: 0 auto;
+}
+#lead li{
+	float:left;
+	margin:0px 15px;
+	line-height: 60px;
+	font-size: 20px;
+	padding:0 5px;
+}
+#lead .shoes{
+	
+}
+
+}
+#lead  a{
+	color:#F33F3F;
+	font-size: 20px;
+	line-height: 60px;
+	font-weight:600px;
+
+}
+#lead a:hover{
+	color:#F33F3F;}
+	#d1{height:600px; }
+#d1 a{display: none;}
+/*content内容*/
+#content{
+	width:900px;
+	height:1200px;
+}
+#content .d1 {
+	width:900px;
+	height:300px;}
+#content .d1 img{
+	width:900px;
+	height:300px;
+}
+#content li{
+	float:left;
+}
+#content .d2 img{
+	width:450px;
+	height:300px;
+}
